@@ -10,9 +10,10 @@ let secret_number = parseInt(Math.random()* limite+1);
 function verificarChute(){
     let guess = document.querySelector('input').value;
     if(secret_number == guess){
+        let word_attempts = guess_count > 1 ? 'attempts' : 'attempt';
         var_h1.innerHTML = 'voce acertou!'
         document.getElementById('reiniciar').removeAttribute('disabled');
-        varP.innerHTML = `voce gastou ${count} tentativa`;
+        varP.innerHTML = `voce gastou ${count} ${word_attempts}`;
     }else{
         if(guess > secret_number){
             varP.innerHTML = 'o numero é menor';
