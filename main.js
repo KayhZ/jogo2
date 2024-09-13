@@ -4,7 +4,7 @@ varP = document.querySelector('p');
 varP.innerHTML = 'escolha um numero de 0 a 10:';
 
 let count = 1;
-let limite = 10;
+let limite = 100;
 let secret_number = parseInt(Math.random()* limite+1);
 
 function verificarChute(){
